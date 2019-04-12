@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    public ArrayList<String> data = new ArrayList<String>();
+    public ArrayList<String> data;
 
     public MyAdapter() { this.data = new ArrayList<String>(); }
 
@@ -40,7 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        private final TextView name;
+        private TextView name;
 
         public MyViewHolder(final View itemView) {
             super(itemView);
